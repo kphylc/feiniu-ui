@@ -1,0 +1,10 @@
+/.idea/*
+/out/*
+/target/*
+/test-output/*
+*.iml
+/.svn/*
+/target/
+lib/*.zip
+.project
+.classpath

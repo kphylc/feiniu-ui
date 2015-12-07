@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Shopping">
+    <listeners>
+        <listener class-name="com.PublicSupportTest.Listener.BetaTestListener" />
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+
+    <test name="test" preserve-order="true">	<!-- 把preserve-order设为true以后就能保证在节点下的方法是按照顺序执行的 -->
+        <!--<parameter name="searchTXT" value="ie" />-->
+        <!--<parameter name="searchTXT2" value="test" />-->
+        <!--<groups>-->
+            <!--<define name="all">-->
+                <!--<exclude name="test"/>-->
+                <!--<include name="test"/>-->
+                <!--<include name="testall"/>-->
+            <!--</define>-->
+            <!--<run>-->
+                <!--<include name="login"/>-->
+                <!--<include name="test"/>-->
+                <!--<include name="all" />-->
+            <!--</run>-->
+        <!--</groups>-->
+        <classes>
+            <class name="com.Beta1.BetaTest">
+            	<methods>
+                  <include name="logIn67238" />
+                  <include name="orderAndAccount" />
+            	</methods>
+            </class>
+            <!--<class name="feiniu_autotest.FeiNiuWang.Basicmodule.www.WwwTestng"></class>-->
+        </classes>
+    </test>
+</suite>
