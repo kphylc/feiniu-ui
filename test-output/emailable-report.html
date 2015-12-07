@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Shopping</th></tr><tr><td><a href="#t0">test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">35,904</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Shopping</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.Beta1.BetaTest</td><td><a href="#m0">orderAndAccount</a></td><td rowspan="1">1449468382089</td><td rowspan="1">27443</td></tr><tr><th colspan="4">test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.Beta1.BetaTest</td><td><a href="#m1">logIn67238</a></td><td rowspan="1">1449468374324</td><td rowspan="1">7765</td></tr></tbody></table><h2>test</h2><h3 id="m0">com.Beta1.BetaTest#orderAndAccount</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Init£º5|521<br/>orderAndAccount--Test method failed
+<br/>D:\Git@feiniu-ui\test-output\snapshot/1449468409532.jpg<br/>orderAndAccount--Test method failed
+<br/>D:\Git@feiniu-ui\test-output\snapshot/1449468409901.jpg</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Command duration or timeout: 9 milliseconds
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;SH-QA-PC0114&apos;, ip: &apos;10.200.246.203&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: e8d028c1-31e3-425b-ba1a-1703d9498dba
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=42.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:326)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:139)
+	at com.PublicSupportTest.PublicOperation.payOrderCouponBeta(PublicOperation.java:444)
+	at com.Beta1.TestCase.orderAndAccount(TestCase.java:280)
+	at com.Beta1.BetaTest.orderAndAccount(BetaTest.java:68)
+Caused by: org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;SH-QA-PC0114&apos;, ip: &apos;10.200.246.203&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.enabled(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9987)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12517)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12534)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12539)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12481)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.Beta1.BetaTest#logIn67238</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">testcase 67238 success<br/>logIn67238--Test method success
+<br/>logIn67238--Test method success
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

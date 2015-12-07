@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Shopping]">
+  <listeners>
+    <listener class-name="com.PublicSupportTest.Listener.BetaTestListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="test(failed)">
+    <classes>
+      <class name="com.Beta1.BetaTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="logIn67238"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="orderAndAccount"/>
+        </methods>
+      </class> <!-- com.Beta1.BetaTest -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Shopping] -->

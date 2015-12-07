@@ -1,0 +1,198 @@
+<html>
+<head>
+<title>TestNG:  test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 07 14:06:14 CST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>35 seconds (35904 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Beta1.BetaTest.orderAndAccount()'><b>orderAndAccount</b><br>Test class: com.Beta1.BetaTest<br/>
+<a href="#Output-495448210" onClick='toggleBox("Output-495448210", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-495448210" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-495448210">
+Init£º5|521<br/>
+orderAndAccount--Test method failed
+<br/>
+D:\Git@feiniu-ui\test-output\snapshot/1449468409532.jpg<br/>
+orderAndAccount--Test method failed
+<br/>
+D:\Git@feiniu-ui\test-output\snapshot/1449468409901.jpg<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Command duration or timeout: 9 milliseconds
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;SH-QA-PC0114&apos;, ip: &apos;10.200.246.203&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: e8d028c1-31e3-425b-ba1a-1703d9498dba
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=42.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:326)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:139)
+	at com.PublicSupportTest.PublicOperation.payOrderCouponBeta(PublicOperation.java:444)
+	at com.Beta1.TestCase.orderAndAccount(TestCase.java:280)
+	at com.Beta1.BetaTest.orderAndAccount(BetaTest.java:68)
+Caused by: org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;SH-QA-PC0114&apos;, ip: &apos;10.200.246.203&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.enabled(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9987)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12517)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12534)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12539)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12481)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace495448210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace495448210'><pre>org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Command duration or timeout: 9 milliseconds
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;SH-QA-PC0114&apos;, ip: &apos;10.200.246.203&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: e8d028c1-31e3-425b-ba1a-1703d9498dba
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=42.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:326)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:139)
+	at com.PublicSupportTest.PublicOperation.payOrderCouponBeta(PublicOperation.java:444)
+	at com.Beta1.TestCase.orderAndAccount(TestCase.java:280)
+	at com.Beta1.BetaTest.orderAndAccount(BetaTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+Caused by: org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;SH-QA-PC0114&apos;, ip: &apos;10.200.246.203&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.enabled(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9987)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12517)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12534)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12539)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12481)
+</pre></div></td>
+<td>27</td>
+<td>com.Beta1.BetaTest@6291d9aa</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Beta1.BetaTest.logIn67238()'><b>logIn67238</b><br>Test class: com.Beta1.BetaTest<br/>
+<a href="#Output-308502069" onClick='toggleBox("Output-308502069", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-308502069" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-308502069">
+testcase 67238 success<br/>
+logIn67238--Test method success
+<br/>
+logIn67238--Test method success
+<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.Beta1.BetaTest@6291d9aa</td></tr>
+</table><p>
+</body>
+</html>

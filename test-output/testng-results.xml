@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[testcase 67238 success]]>
+    </line>
+    <line>
+      <![CDATA[logIn67238--Test method success
+]]>
+    </line>
+    <line>
+      <![CDATA[logIn67238--Test method success
+]]>
+    </line>
+    <line>
+      <![CDATA[Init£º5|521]]>
+    </line>
+    <line>
+      <![CDATA[orderAndAccount--Test method failed
+]]>
+    </line>
+    <line>
+      <![CDATA[D:\Git@feiniu-ui\test-output\snapshot/1449468409532.jpg]]>
+    </line>
+    <line>
+      <![CDATA[orderAndAccount--Test method failed
+]]>
+    </line>
+    <line>
+      <![CDATA[D:\Git@feiniu-ui\test-output\snapshot/1449468409901.jpg]]>
+    </line>
+  </reporter-output>
+  <suite name="Shopping" duration-ms="35904" started-at="2015-12-07T06:06:14Z" finished-at="2015-12-07T06:06:50Z">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="35904" started-at="2015-12-07T06:06:14Z" finished-at="2015-12-07T06:06:50Z">
+      <class name="com.Beta1.BetaTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.Beta1.BetaTest@6291d9aa]" name="beforeSuite" is-config="true" duration-ms="98196" started-at="2015-12-07T14:04:36Z" finished-at="2015-12-07T14:06:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Beta1.BetaTest@6291d9aa]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-07T14:06:14Z" finished-at="2015-12-07T14:06:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logIn67238()[pri:0, instance:com.Beta1.BetaTest@6291d9aa]" name="logIn67238" duration-ms="7765" started-at="2015-12-07T14:06:14Z" finished-at="2015-12-07T14:06:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testcase 67238 success]]>
+            </line>
+            <line>
+              <![CDATA[logIn67238--Test method success
+]]>
+            </line>
+            <line>
+              <![CDATA[logIn67238--Test method success
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logIn67238 -->
+        <test-method status="FAIL" signature="orderAndAccount()[pri:0, instance:com.Beta1.BetaTest@6291d9aa]" name="orderAndAccount" duration-ms="27443" started-at="2015-12-07T14:06:22Z" depends-on-methods="com.Beta1.BetaTest.logIn67238" finished-at="2015-12-07T14:06:49Z">
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[Element is disabled and so may not be used for actions
+Command duration or timeout: 9 milliseconds
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'SH-QA-PC0114', ip: '10.200.246.203', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e8d028c1-31e3-425b-ba1a-1703d9498dba
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=42.0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Command duration or timeout: 9 milliseconds
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'SH-QA-PC0114', ip: '10.200.246.203', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: e8d028c1-31e3-425b-ba1a-1703d9498dba
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=42.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:326)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:139)
+	at com.PublicSupportTest.PublicOperation.payOrderCouponBeta(PublicOperation.java:444)
+	at com.Beta1.TestCase.orderAndAccount(TestCase.java:280)
+	at com.Beta1.BetaTest.orderAndAccount(BetaTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+Caused by: org.openqa.selenium.InvalidElementStateException: Element is disabled and so may not be used for actions
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'SH-QA-PC0114', ip: '10.200.246.203', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.preconditions.enabled(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9987)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12517)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12534)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12539)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/chao.lu/AppData/Local/Temp/anonymous1009764666836663736webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12481)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Init£º5|521]]>
+            </line>
+            <line>
+              <![CDATA[orderAndAccount--Test method failed
+]]>
+            </line>
+            <line>
+              <![CDATA[D:\Git@feiniu-ui\test-output\snapshot/1449468409532.jpg]]>
+            </line>
+            <line>
+              <![CDATA[orderAndAccount--Test method failed
+]]>
+            </line>
+            <line>
+              <![CDATA[D:\Git@feiniu-ui\test-output\snapshot/1449468409901.jpg]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- orderAndAccount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Beta1.BetaTest@6291d9aa]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-12-07T14:06:50Z" finished-at="2015-12-07T14:06:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.Beta1.BetaTest@6291d9aa]" name="afterSuite" is-config="true" duration-ms="366" started-at="2015-12-07T14:06:50Z" finished-at="2015-12-07T14:06:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.Beta1.BetaTest -->
+    </test> <!-- test -->
+  </suite> <!-- Shopping -->
+</testng-results>
